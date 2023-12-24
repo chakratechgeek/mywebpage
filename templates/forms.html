@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg FormS</title>
+    <style>
+        th,td {
+            color: white;
+            
+        }
+        p {
+            font-size:20px;
+        }
+        .bodyclass {
+            background: #0b905c;
+        }
+        .tabclass {
+            padding: 20px;
+            border-spacing: 20px;
+            background: #232020;
+        }
+    </style>
+</head>
+
+<body class="bodyclass">
+
+    <form action="register/" method="POST">
+        <center>
+            <table class="tabclass">
+                <tr>
+                    <th colspan="2">
+                        <p >Registration Form</p> <hr>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" size="30"></td>
+                </tr>
+                <tr>
+                    <td>DoB</td>
+                    <td><input type="date" style="width: 230px;"></td>
+
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" size="30"></td>
+                </tr>
+
+                <tr>
+                    <td>Course</td>
+                    <td>
+                        <select style="width: 230px;height: 25px;">
+                            <option>Select Course</option>
+                            <option>BCA</option>
+                            <option>BE</option>
+                            <option>MCA</option>
+                            <option>MBA</option>
+                            <option>BBA</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gen">Male
+                        <input type="radio" name="gen">Female
+                        <input type="radio" name="gen">Others
+                    </td>
+
+                </tr>
+                <td>Address</td>
+                <td><textarea style="width: 230px;" name="address" cols="30" rows="5"></textarea></td>
+                <tr>
+                    <td>Email</td>
+                    <td><input size="30" type="email" name="" id=""></td>
+                </tr>
+
+                <tr>
+                    <td>Range</td>
+                    <td><input style="width: 230px;" type="range"></td>
+                </tr>
+
+                <tr>
+                    <td>Skills</td>
+                    <td>
+                        <input type="checkbox"> C
+                        <input type="checkbox"> C++
+                        <input type="checkbox"> Python
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Browse</td>
+                    <td><input  style="width: 230px" type="file"></td>
+
+                </tr>
+
+                <tr>
+                    <td colspan="2" cellspacing="5px">
+                        <center>
+                            <input type="submit" value="Save" name="" id="">
+                            <input type="submit" value="Clear" name="" id="">
+                            <button>Update</button>
+                            <button>Delete</button>
+                        </center>
+                    </td>
+                </tr>
+            </table>
+
+        </center>
+
+
+    </form>
+
+</body>
+
+</html>

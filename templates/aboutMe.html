@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Career Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .summary {
+            margin-bottom: 30px;
+        }
+
+        .skills {
+            margin-top: 30px;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills ul li::before {
+            content: "• ";
+            color: #007bff; /* Bullet color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back-to-main">
+        <a href="{% url 'Home' %}">Go back to main page</a>
+    </div>
+    <h1>About Me - Career Summary</h1>
+
+    <div class="summary">
+        <p>
+            I am a seasoned IT professional with over 15 years of industry experience. Throughout my career, I have
+            specialized in various roles, including databases (Oracle, Postgres, and MySQL), data engineering,
+            development engineering, Python programming, Bash scripting, and PL/SQL programming.
+        </p>
+        <p>
+            My expertise extends to DevOps architecture with substantial hands-on experience in AWS and Azure cloud
+            platforms. I hold certifications in AWS Solution Architect and TOGAF, demonstrating proficiency in various
+            domains, including ITIL, Kubernetes, CodeFresh (CI/CD), Python, SQL, Terraform, and Ansible.
+        </p>
+    </div>
+
+    <div class="skills">
+        <h2>My Skillsets</h2>
+        <ul>
+            <li>ITIL</li>
+            <li>Kubernetes</li>
+            <li>AWS</li>
+            <li>CodeFresh (CI/CD)</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Oracle</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>Bash</li>
+            <li>TOGAF</li>
+            <li>Terraform</li>
+            <li>Ansible</li>
+            <!-- Add more skills as needed -->
+        </ul>
+    </div>
+    <div class="back-to-main">
+        <a href="{% url 'Home' %}">Go back to main page</a>
+    </div>
+</body>
+
+</html>

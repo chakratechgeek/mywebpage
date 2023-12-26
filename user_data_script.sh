@@ -7,10 +7,6 @@ sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 
-# Add the repository to Apt sources:
-mv /etc/apt/keyrings/docker.gpg /etc/apt/keyrings/docker.gpg_old
-deb [arch=your_architecture] https://download.docker.com/linux/ubuntu your_ubuntu_codename stable
-
 sudo apt-get -y update
 sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 #end

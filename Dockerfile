@@ -15,5 +15,5 @@ EXPOSE 8000
 
 # Define the command to start the Django server
 #end
-CMD ["python", "manage.py", "runserver"]
+CMD ["python", "/root/django/app/manage.py", "runserver", "0.0.0.0:8000"]
 

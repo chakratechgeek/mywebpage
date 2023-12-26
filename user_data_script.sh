@@ -8,6 +8,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o 
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 
 # Add the repository to Apt sources:
+mv /etc/apt/keyrings/docker.gpg /etc/apt/keyrings/docker.gpg_old
 deb [arch=your_architecture] https://download.docker.com/linux/ubuntu your_ubuntu_codename stable
 
 sudo apt-get -y update

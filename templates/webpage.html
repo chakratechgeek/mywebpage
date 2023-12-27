@@ -24,6 +24,17 @@
     margin: 0;
     padding: 0;
   }
+  .cdiv {
+    background-color: black;
+    width: 1000px;
+    height: 450px;
+    margin: 20px auto; /* Center the div horizontally with top and bottom margin */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add some padding around the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    color: white; /* Text color */
+    text-align: center; /* Center-align text content */
+  }
 
     </style>
 </head>
@@ -58,13 +69,13 @@
         <center><h1>Welcome to Chakra's Web Site</h1></center>
     </div>
 
-    <center><div style="width: 1100px; height: 400px; margin-top: 40px;">
+    <center><div class="cdiv">
         <marquee direction="left" scrollamount="8" bgcolor="black" height="150px" width="200px" >
-            <img src="{% static 'image/devops.jpg' %}"  width="200" height="150" title="DevOps" >
+            <img src="{% static 'image/devops.jpg' %}" width="200" height="150" title="DevOps" >
            
         </marquee>
-        <marquee  direction="right" scrollamount="8" bgcolor="black" height="150px" width="220px">
-            <img src="{% static 'image/pgsql1.jpg' %}" width="200" height="150" >
+        <marquee  direction="right" scrollamount="8" bgcolor="black" height="150px" width="200px">
+            <img src="{% static 'image/pgsql1.jpg' %}"    width="200" height="150" >
         </marquee>
         <marquee  behavior="alternate" scrollamount="10" bgcolor="black" height="150px" width="250px">
             <img src="{% static 'image/oracle.jpg' %}" width="200" height="150" >
@@ -87,7 +98,7 @@
         <marquee direction="left"  scrollamount="12" bgcolor="black" height="150px" width="280px">
             <img src="{% static 'image/linux2.jpg' %}" width="200" height="150">
         </marquee>
-        <marquee  behavior="alternate"  scrollamount="12" bgcolor="black" height="150px" width="230px">
+        <marquee  behavior="alternate"  scrollamount="8" bgcolor="black" height="150px" width="230px">
             <img src="{% static 'image/terraform.jpg' %}" width="200" height="150">
         </marquee>
     </div></center>

@@ -13,6 +13,6 @@ jobs:
       - name: Trigger Workflow 2
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}  # Replace with your own secret name
+          token: ${{ secrets.ACCESS_KEY }}  # Replace with your own secret name
           repository: chakratechgeek/ec2configAnsible  # Replace with your repository
           event-type: workflow_2_trigger

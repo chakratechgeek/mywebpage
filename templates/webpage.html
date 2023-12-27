@@ -19,10 +19,16 @@
             display: inline-block; /* Makes the h1 element behave as an inline block */
             margin-top: 20px;
         }
+        marquee img {
+            display: inline-block; /* or inline-block */
+    margin: 0;
+    padding: 0;
+  }
+
     </style>
 </head>
 
-<body>
+<body >
 
     <div class="menu-bar">
         <ul>
@@ -53,33 +59,36 @@
     </div>
 
     <center><div style="width: 1100px; height: 400px; margin-top: 40px;">
-        <marquee direction="left" scrollamount="5" bgcolor="grey" height="150px" width="300px" >
+        <marquee direction="left" scrollamount="8" bgcolor="black" height="150px" width="200px" >
             <img src="{% static 'image/devops.jpg' %}"  width="200" height="150" title="DevOps" >
            
         </marquee>
-        <marquee  direction="right" scrollamount="8" bgcolor="black" height="150px" width="300px">
-            <img src="{% static 'image/pgsql.png' %}" width="200" height="150" >
+        <marquee  direction="right" scrollamount="8" bgcolor="black" height="150px" width="220px">
+            <img src="{% static 'image/pgsql1.jpg' %}" width="200" height="150" >
         </marquee>
-        <marquee  behavior="alternate" scrollamount="10" bgcolor="pink" height="150px" width="300px">
+        <marquee  behavior="alternate" scrollamount="10" bgcolor="black" height="150px" width="250px">
             <img src="{% static 'image/oracle.jpg' %}" width="200" height="150" >
         </marquee>
-        <marquee direction="down" scrollamount="12" bgcolor="blue" height="150px" width="300px">
+        <marquee direction="down" scrollamount="10" bgcolor="black" height="150px" width="230px">
             <img src="{% static 'image/ansible.jpg' %}" style="display: block; margin: auto;" width="200" height="150">
         </marquee>
-        <marquee behavior="alternate" scrollamount="14" bgcolor="green" height="150px" width="300px">
+        <marquee behavior="alternate" scrollamount="14" bgcolor="black" height="150px" width="350px">
             <img src="{% static 'image/django.jpg' %}" width="200" height="150"> 
         </marquee>
-        <marquee direction="left" scrollamount="16" bgcolor="purple" height="150px" width="300px">
+        <marquee direction="left" scrollamount="10" bgcolor="black" height="150px" width="320px">
             <img src="{% static 'image/kube.jpg' %}" width="200" height="150">
         </marquee>
-        <marquee direction="up" scrollamount="10" bgcolor="white" height="150px" width="300px">
-            <img src="{% static 'image/cloud.jpg' %}" style="display: block; margin: auto;" width="200" height="150">
+        <marquee direction="up" scrollamount="10" bgcolor="black" height="150px" width="280px">
+            <img src="{% static 'image/aws1.jpg' %}" style="display: block; margin: auto;" width="200" height="150">
         </marquee>
-        <marquee direction="right"  scrollamount="12" bgcolor="yellow" height="150px" width="300px">
+        <marquee direction="right"  scrollamount="12" bgcolor="black" height="150px" width="250px">
             <img src="{% static 'image/git.jpg' %}" width="150" height="150">
         </marquee>
-        <marquee direction="left"  scrollamount="14" bgcolor="lightgreen" height="150px" width="300px">
-            <img src="{% static 'image/linux.jpg' %}" width="150" height="150">
+        <marquee direction="left"  scrollamount="12" bgcolor="black" height="150px" width="280px">
+            <img src="{% static 'image/linux2.jpg' %}" width="200" height="150">
+        </marquee>
+        <marquee  behavior="alternate"  scrollamount="12" bgcolor="black" height="150px" width="230px">
+            <img src="{% static 'image/terraform.jpg' %}" width="200" height="150">
         </marquee>
     </div></center>
 

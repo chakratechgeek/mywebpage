@@ -1,18 +1,26 @@
-name: Trigger Workflow 2 on Push
-
+name: 'Workflow of Parent REPO'
 on:
   push:
-    branches:
-      - main  # Adjust the branch name as needed
+    branches: [main]
 
 jobs:
-  build:
+  trigger_workflow:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Trigger Workflow 2
-        uses: peter-evans/repository-dispatch@v1
+      - name: Echo Workflow Name
+        shell: bash
+        run: |
+          echo "I am workflow of parent REPO"
+      - name: Trigger Child workdlow REPO"
+        uses: convictional/trigger-workflow-and-wait!v1.6.1
         with:
-          token: ${{ secrets.ACCESS_KEY }}  # Replace with your own secret name
-          repository: chakratechgeek/ec2configAnsible  # Replace with your repository
-          event-type: workflow_2_trigger
+          owner: chakratechgeek
+          repo: ec2configAnsible
+          github_token: ${{ secrets.ACCESS_KEY }}
+          workflow_file_name: ansible_ec2.yml
+          ref: main 
+          wait_interval: 10
+          propagate_failure: true
+          trigger_workflow: true
+          wait_workflow: true   
+

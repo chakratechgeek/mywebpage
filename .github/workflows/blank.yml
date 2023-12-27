@@ -12,7 +12,7 @@ jobs:
         run: |
           echo "I am workflow of parent REPO"
       - name: Trigger Child workdlow REPO"
-        uses: convictional/trigger-workflow-and-wait!v1.6.1
+        uses: convictional/trigger-workflow-and-wait@v1.6.1
         with:
           owner: chakratechgeek
           repo: ec2configAnsible

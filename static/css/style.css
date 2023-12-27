@@ -31,7 +31,8 @@
 }
 
 .backcolclass {
-    background-color: srgb(71, 43, 43);
+    /*background-color: srgb(71, 43, 43); */
+    background-color: black;
     background-size: cover; 
 
 }

@@ -16,7 +16,7 @@ jobs:
         with:
           owner: chakratechgeek
           repo: ec2configAnsible
-          github_token: ${{ secrets.ACCESS_KEY }}
+          github_token: ${{ secrets.ACTIONS_KEY }}
           workflow_file_name: ansible_ec2.yml
           ref: main 
           wait_interval: 10

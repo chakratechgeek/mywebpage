@@ -1,7 +1,7 @@
 name: 'Workflow of Parent REPO'
 on:
   push:
-    branches: [main]
+    branches: [feat/add_tab]
 
 jobs:
   trigger_workflow:

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChakraTechGeek Contact</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}">
+    <style>
+        body {
+            background-color: black;
+            color: white; /* Optional: Set text color to white for better visibility */
+        }
+        a {
+            color: white;
+            font-size: large;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <address>
+        <strong>ChakraTechGeek, Inc.</strong><br>
+        H105 DLF Maiden Heights Rajapura<br>
+        Jigani Bangalore 560105<br>
+        <abbr title="Phone">P:</abbr> (91) 99722 34824
+      </address>
+      
+      <address>
+        <strong>Chakravarthi Thangavelu</strong><br>
+        <a href="mailto:#">chakratechgeek@outlook.com</a>
+      </address>
+      <a href="{% url 'Home' %}" class="text-right" margin-right="10px" align="right">Click to main page</a>
+</body>
+</html>

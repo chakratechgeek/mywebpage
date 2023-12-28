@@ -45,7 +45,7 @@
         <ul>
             <li class="active"><a href="#">Home</a></li>
             <li><a href="{% url 'aboutMe' %}" target="_blank">About Me</a> </li>
-            <li><a href="#">Client</a>
+            <li><a href="#">Learning</a>
                 <div class="sub-menu-1">
                     <ul>
                         <li><a href="#">Payments</a></li>
@@ -56,12 +56,10 @@
                 </div>
             </li>
 
-            <li><a href="#">Services</a></li>
-
-
-            <li><a href="#">Sign up</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="{% url 'signup' %}">Sign up</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+            
         </ul>
     </div>
 

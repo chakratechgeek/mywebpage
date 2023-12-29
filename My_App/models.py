@@ -8,3 +8,7 @@ class Datas(models.Model):
     Contact=models.CharField(max_length=20,default="")
     Email=models.CharField(max_length=40,default="")
     
+class Fun(models.Model):
+    Num1=models.IntegerField(default="")
+    Num2=models.IntegerField(default="")
+    

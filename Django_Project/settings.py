@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+DEBUG = True  # Ensure it's set to True for local development
 
 # Application definition
 

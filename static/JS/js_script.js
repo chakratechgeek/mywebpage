@@ -18,6 +18,7 @@ function add() {
     out = num1 + num2;
 
     document.getElementById("result").textContent = "Total : " + out;
+    document.getElementsByTagName("form_id").submit();
     messageElement.textContent = ""; // Clear any previous message
 }
 

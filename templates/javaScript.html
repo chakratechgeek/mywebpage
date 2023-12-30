@@ -6,10 +6,10 @@
     <title>Java Script</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/js_style.css' %}">
-    <script type="text/javascript" src="{% static 'JS/js_script.js' %}" defer > </script>
+    <script type="text/javascript" src="{% static 'JS/js_script.js' %}"> </script>
 </head>
 <body>
-    <form id="form_id" action="" method="POST">
+	<form id="form_id" method="POST">
 
     {% csrf_token %}
     <div id="border">
@@ -17,8 +17,8 @@
         <input type="text" id="val1" name="val1"><br><br>
         <label for="">Number-2</label>
         <input type="text" id="val2" name="val2"><br><br>
-        <button onclick="add()" id="add">Submit</button>
-        <button onclick="clr()" id="clear">Clear</button>
+        <button id="add">Submit</button>
+        <button id="clear">Clear</button>
         <b><h3 id="message"> - </h3></b>
         <b><h3 id="result">-</h3></b>
     </div>

@@ -1,0 +1,50 @@
+.pclass {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:medium;
+    line-height:2;
+    font-weight:normal;
+    text-align: left;
+    letter-spacing: normal;
+    word-spacing: normal;
+    /*  text-decoration:underline; 
+    text-transform: uppercase;  */
+    white-space:normal;
+    
+}
+
+.myclass {
+    color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bclass {
+    color: white;
+    height: 400px;
+    width: 400px;
+    margin-left: 40px;
+    border-style:ridge;
+    margin-top: 30px;
+    background-color: rgb(88, 143, 226);
+}
+
+.backcolclass {
+    background-color: srgb(71, 43, 43); 
+    background-size: cover; 
+
+}
+
+.picclass {
+    height: 250px;
+    width: 250px;
+    /*margin: 10px 10px 10px 1500px;
+        /*margin-top: 20px;
+        margin-right: 20px;*/
+     float:right; 
+}
+
+
+
+

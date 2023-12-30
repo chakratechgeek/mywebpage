@@ -1,18 +1,16 @@
 
-function add() {
-    console.log("Chakra");
-    var num1, num2, out, inputValue1, inputValue2, messageElement;
+function validateForm() {
+    var inputValue1 = document.getElementById("val1").value.trim();
+    var inputValue2 = document.getElementById("val2").value.trim();
+    
 
-    inputValue1 = document.getElementById("val1").value.trim();
-    inputValue2 = document.getElementById("val2").value.trim();
-    messageElement = document.getElementById('message');
 
-    if (isNaN(inputValue1) || isNaN(inputValue2)) {
+ if (isNaN(inputValue1) || isNaN(inputValue2)) {
         messageElement.textContent = "Input is not NUMER";
-        return; // Exit the function if inputs are empty
+        return false; // Exit the function if inputs are empty
     } else if   (!inputValue1 || !inputValue2 ){
         messageElement.textContent = "Input is empty";
-        return;
+        return false;
     }
 
     num1 = Number(inputValue1);
@@ -21,11 +19,12 @@ function add() {
 
     document.getElementById("result").textContent = "Total : " + out;
     messageElement.textContent = ""; // Clear any previous message
+    return true;
+
 }
 
-function clr() {
-    document.getElementById("val1").value = "";
-    document.getElementById("val2").value = "";
-    document.getElementById("result").innerHTML = "";
-    document.getElementById('message').textContent = ""; // Clear any previous message
-}
+document.getElementById("form_id").onsubmit = function() {
+    return validateForm();
+};
+
+

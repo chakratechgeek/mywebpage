@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="{% static 'css/js_style.css' %}">
 </head>
 <body>
-    <form action="" method="POST">
-        {% csrf_token %}
+    <form id="form_id" action="" method="POST">
+    {% csrf_token %}
     <div id="border">
-        <label for="">Number-1</label>
+        <label for=if "">Number-1</label>
         <input type="text" id="val1" name="val1"><br><br>
         <label for="">Number-2</label>
         <input type="text" id="val2" name="val2"><br><br>

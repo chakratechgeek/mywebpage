@@ -8,7 +8,7 @@ function add() {
     if (isNaN(inputValue1) || isNaN(inputValue2)) {
         messageElement.textContent = "Input is not NUMER";
         return; // Exit the function if inputs are empty
-    } else if   (!inputValue1 || !inputValue2 ){
+    } else if (!inputValue1 || !inputValue2) {
         messageElement.textContent = "Input is empty";
         return;
     }
@@ -19,7 +19,9 @@ function add() {
 
     document.getElementById("result").textContent = "Total : " + out;
     messageElement.textContent = ""; // Clear any previous message
+    document.getElementById("form_id").submit();
 }
+
 
 function clr() {
     document.getElementById("val1").value = "";

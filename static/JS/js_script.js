@@ -1,4 +1,6 @@
+
 function add() {
+    console.log("Chakra");
     var num1, num2, out, inputValue1, inputValue2, messageElement;
 
     inputValue1 = document.getElementById("val1").value.trim();
@@ -18,7 +20,6 @@ function add() {
     out = num1 + num2;
 
     document.getElementById("result").textContent = "Total : " + out;
-    document.getElementsByTagName("form_id").submit();
     messageElement.textContent = ""; // Clear any previous message
 }
 

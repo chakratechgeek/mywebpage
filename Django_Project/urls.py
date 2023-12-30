@@ -25,5 +25,5 @@ urlpatterns = [
     path('aboutMe/',views.MyPlc.aboutMe,name='aboutMe'),
     path('signup/',views.MyPlc.signup,name='signup'),
     path('contact/',views.MyPlc.contact,name='contact'),
-    path('fun/',views.MyPlc.fun,name='fun')
+    path('fun/',views.MyPlc.fun,name='fun'),
 ]

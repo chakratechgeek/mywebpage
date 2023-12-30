@@ -6,10 +6,12 @@
     <title>Java Script</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/js_style.css' %}">
+    <script type="text/javascript" src="{% static 'JS/js_script.js' %}" defer > </script>
 </head>
 <body>
     <form id="form_id" action="" method="POST">
-        {% csrf_token %}
+
+    {% csrf_token %}
     <div id="border">
         <label for="">Number-1</label>
         <input type="text" id="val1" name="val1"><br><br>
@@ -21,6 +23,5 @@
         <b><h3 id="result">-</h3></b>
     </div>
 </form>
-    <script src="{% static 'JS/js_script.js' %}"></script>
 </body>
 </html>

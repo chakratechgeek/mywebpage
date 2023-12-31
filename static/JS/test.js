@@ -27,17 +27,13 @@ function clearForm() {
     document.getElementById("result").textContent = "-"; // Reset the result display
 }
 
-
-
 window.onload = function() {
-    // ... (existing code)
-
-    // Attach clearForm function to the "Clear" button click event
-	    var form = document.getElementById("form_id");
+    var form = document.getElementById("form_id");
     form.onsubmit = function(event) {
         event.preventDefault(); // Prevent the default form submission behavior
         validateForm(); // Call the validateForm function
     };
+
     var clearButton = document.getElementById("clear");
     if (clearButton) {
         clearButton.addEventListener("click", function(event) {
@@ -46,3 +42,4 @@ window.onload = function() {
         });
     }
 };
+

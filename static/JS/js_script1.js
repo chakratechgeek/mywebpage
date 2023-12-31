@@ -1,4 +1,4 @@
-
+alert ("All done");
 function validateForm() {
     var inputValue1 = document.getElementById("val1").value.trim();
     var inputValue2 = document.getElementById("val2").value.trim();

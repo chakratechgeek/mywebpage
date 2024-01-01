@@ -13,9 +13,9 @@
             padding: 20px;
         }
 
-        h1 {
+        h1,h2 {
             text-align: center;
-            color: #333;
+            color: white;
         }
 
         .summary {
@@ -29,17 +29,36 @@
         .skills ul {
             list-style: none;
             padding: 0;
+            color: white;
         }
 
         .skills ul li::before {
             content: "• ";
-            color: #007bff; /* Bullet color */
+            color: white
         }
+        a {
+            color: yellow;
+        }
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuytydIe7cIEFgrp0QMx5ZIvdO4tzK_zTl9g&usqp=CAU');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value (0.3) for transparency */
+}
+.summary {
+    color: white;
+}
+
     </style>
 </head>
 
 <body>
-    <div class="back-to-main">
+    <div class="back-to-main" >
         <a href="{% url 'Home' %}">Go back to main page</a>
     </div>
     <h1>About Me - Career Summary PLC Deep LoveS</h1>

@@ -6,7 +6,27 @@
     <title>Java Script</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/js_style.css' %}">
-    <script type="text/javascript" src="{% static 'JS/js_script.js.js' %}"> </script>
+    <script type="text/javascript" src="{% static 'JS/js_script.js' %}"> </script>
+    <style>
+        body {
+    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuytydIe7cIEFgrp0QMx5ZIvdO4tzK_zTl9g&usqp=CAU');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value (0.3) for transparency */
+}
+label {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+    color: white;
+}
+    </style>
 </head>
 <body>
 	<form id="form_id" method="POST">
@@ -19,8 +39,8 @@
         <input type="text" id="val2" name="val2"><br><br>
         <button id="add">Submit</button>
         <button id="clear">Clear</button>
-        <b><h3 id="message"> - </h3></b>
-        <b><h3 id="result">-</h3></b>
+        <b><h3 id="message"> </h3></b>
+        <b><h3 id="result"></h3></b>
     </div>
 </form>
 </body>

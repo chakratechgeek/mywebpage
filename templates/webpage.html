@@ -25,7 +25,7 @@
     padding: 0;
   }
   .cdiv {
-    background-color: black;
+    /*background-color: black; */
     width: 1000px;
     height: 450px;
     margin: 20px auto; /* Center the div horizontally with top and bottom margin */
@@ -40,6 +40,19 @@
 
 <body >
 
+
+
+    <div class="navbar">
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+        <a href="#" class="chakra"><i class="fa fa-fw fa-user"></i> Login</a>
+      </div>
+      <div class="background-image">
+      <h2> Chakra welcomes you to this website</h2>
+      <p> Hover on to know more details</p>
+      </div>
+      
     <div class="menu-bar">
         <ul>
             <li class="active"><a href="#">Home</a></li>
@@ -63,40 +76,40 @@
         </ul>
     </div>
 
-    <div>
-        <center><h1>Welcome to Chakra's Web Site</h1></center>
+    <div class="background-image">
+        <center><h2>Welcome to Chakra's Web Site</h2></center>
     </div>
 
     <center><div class="cdiv">
-        <marquee direction="left" scrollamount="8" bgcolor="black" height="150px" width="200px" >
+        <marquee direction="left" scrollamount="8" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="200px" >
             <img src="{% static 'image/devops.jpg' %}" width="200" height="150" title="DevOps" >
            
         </marquee>
-        <marquee  direction="right" scrollamount="8" bgcolor="black" height="150px" width="200px">
+        <marquee  direction="right" scrollamount="8" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="200px">
             <img src="{% static 'image/pgsql1.jpg' %}"    width="200" height="150" >
         </marquee>
-        <marquee  behavior="alternate" scrollamount="10" bgcolor="black" height="150px" width="250px">
+        <marquee  direction="down" scrollamount="10" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="250px">
             <img src="{% static 'image/oracle.jpg' %}" width="200" height="150" >
         </marquee>
-        <marquee direction="down" scrollamount="10" bgcolor="black" height="150px" width="230px">
+        <marquee direction="down" scrollamount="10" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="230px">
             <img src="{% static 'image/ansible.jpg' %}" style="display: block; margin: auto;" width="200" height="150">
         </marquee>
-        <marquee behavior="alternate" scrollamount="14" bgcolor="black" height="150px" width="350px">
+        <marquee behavior="alternate" scrollamount="14" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="350px">
             <img src="{% static 'image/django.jpg' %}" width="200" height="150"> 
         </marquee>
-        <marquee direction="left" scrollamount="10" bgcolor="black" height="150px" width="320px">
+        <marquee direction="left" scrollamount="10" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="320px">
             <img src="{% static 'image/kube.jpg' %}" width="200" height="150">
         </marquee>
-        <marquee direction="up" scrollamount="10" bgcolor="black" height="150px" width="280px">
+        <marquee direction="up" scrollamount="10" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="280px">
             <img src="{% static 'image/aws1.jpg' %}" style="display: block; margin: auto;" width="200" height="150">
         </marquee>
-        <marquee direction="right"  scrollamount="12" bgcolor="black" height="150px" width="250px">
+        <marquee direction="right"  scrollamount="12" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="250px">
             <img src="{% static 'image/git.jpg' %}" width="150" height="150">
         </marquee>
-        <marquee direction="left"  scrollamount="12" bgcolor="black" height="150px" width="280px">
+        <marquee direction="left"  scrollamount="12" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="280px">
             <img src="{% static 'image/linux2.jpg' %}" width="200" height="150">
         </marquee>
-        <marquee  behavior="alternate"  scrollamount="8" bgcolor="black" height="150px" width="230px">
+        <marquee  direction="right"  scrollamount="8" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="230px">
             <img src="{% static 'image/terraform.jpg' %}" width="200" height="150">
         </marquee>
     </div></center>

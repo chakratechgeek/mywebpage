@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
+    {% load static %}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;    
   margin: 0;
   padding: 0;
   background-image: url('https://t3.ftcdn.net/jpg/05/81/53/22/360_F_581532287_qrcnpvDyiYDJwiY1BDqkUuhKcEWVYC7p.jpg');
@@ -82,7 +83,7 @@ body {
 
 <div class="navbar">
   <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
-  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+  <a href="{% url 'aboutMe' %}" target="_blank""><i class="fa fa-fw fa-search"></i> About me</a> 
   <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
   <a href="#" class="chakra"><i class="fa fa-fw fa-user"></i> Login</a>
 </div>
@@ -90,6 +91,43 @@ body {
 <h2> Chakra welcomes you to this website</h2>
 <p> Hover on to know more details</p>
 </div>
+
+</div>
+
+<center><div class="cdiv">
+    <marquee direction="left" scrollamount="8" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="200px" >
+        <img src="{% static 'image/devops.jpg' %}" width="200" height="150" title="DevOps" >
+       
+    </marquee>
+    <marquee  direction="right" scrollamount="8" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="200px">
+        <img src="{% static 'image/pgsql1.jpg' %}"    width="200" height="150" >
+    </marquee>
+    <marquee  direction="down" scrollamount="10" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="250px">
+        <img src="{% static 'image/oracle.jpg' %}" width="200" height="150" >
+    </marquee>
+    <marquee direction="down" scrollamount="10" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="230px">
+        <img src="{% static 'image/ansible.jpg' %}" style="display: block; margin: auto;" width="200" height="150">
+    </marquee>
+    <marquee behavior="alternate" scrollamount="14" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="350px">
+        <img src="{% static 'image/django.jpg' %}" width="200" height="150"> 
+    </marquee>
+    <marquee direction="left" scrollamount="10" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="320px">
+        <img src="{% static 'image/kube.jpg' %}" width="200" height="150">
+    </marquee>
+    <marquee direction="up" scrollamount="10" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="280px">
+        <img src="{% static 'image/aws1.jpg' %}" style="display: block; margin: auto;" width="200" height="150">
+    </marquee>
+    <marquee direction="right"  scrollamount="12" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="250px">
+        <img src="{% static 'image/git.jpg' %}" width="150" height="150">
+    </marquee>
+    <marquee direction="left"  scrollamount="12" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="280px">
+        <img src="{% static 'image/linux2.jpg' %}" width="200" height="150">
+    </marquee>
+    <marquee  direction="right"  scrollamount="8" style="background-color: rgba(0, 0, 0, 0.5);" height="150px" width="230px">
+        <img src="{% static 'image/terraform.jpg' %}" width="200" height="150">
+    </marquee>
+</div></center>
+
 
 </body>
 </html>

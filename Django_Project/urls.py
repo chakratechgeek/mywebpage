@@ -26,4 +26,7 @@ urlpatterns = [
     path('signup/',views.MyPlc.signup,name='signup'),
     path('contact/',views.MyPlc.contact,name='contact'),
     path('fun/',views.MyPlc.fun,name='fun'),
+    path('certifiaction/',views.MyPlc.certification,name='certification'),
+    path('learning/',views.MyPlc.learning,name='learning'),
+    path('web/',views.MyPlc.web,name='web'),
 ]

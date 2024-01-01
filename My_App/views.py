@@ -48,3 +48,11 @@ class MyPlc:
             mail=request.POST['mail']
             return render(request,"result.html",{'Name':name,'Password':password,'Address':address,'Mail':mail})
         
+    def certification (request):
+        return render(request,"certification.html")
+    
+    def learning (request):
+        return render(request,"learning.html")
+
+    def web (request):
+        return render(request,"web.html")

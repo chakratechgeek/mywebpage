@@ -83,13 +83,18 @@ body {
 
 <div class="navbar">
   <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
-  <a href="{% url 'aboutMe' %}" target="_blank""><i class="fa fa-fw fa-search"></i> About me</a> 
-  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
-  <a href="#" class="chakra"><i class="fa fa-fw fa-user"></i> Login</a>
+  <a href="{% url 'aboutMe' %}" target="_blank""><i class="fa fa-fw fa-user-circle-o"></i> About me</a> 
+  <a href="{% url 'certification' %}" target="_blank""><i class="fas fa-certificate"></i> My Certification</a> 
+  <a href="{% url 'learning' %}" target="_blank""><i class="fa fa-graduation-cap"></i> My Learning</a> 
+  <a href="{% url 'web' %}" target="_blank""><i class="fa fa-globe"></i> This Web</a> 
+  <a href="#" target="_blank""><i class="fa fa-github"></i> My GitHub</a> 
+  <a href="#" target="_blank""><i class="fas fa-camera"></i> My Projects</a> 
+  <a href="#" target="_blank""><i class="fa fa-heart"></i> Feedback</a> 
+  <a href="{% url 'contact' %}" ><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  
 </div>
 <div class="background-image">
-<h2> Chakra welcomes you to this website</h2>
-<p> Hover on to know more details</p>
+<h2> <span style="color: yellowgreen;">Chakra </span> welcomes you to this website</h2>
 </div>
 
 </div>

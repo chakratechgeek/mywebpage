@@ -11,7 +11,7 @@ class MyPlc:
         pass
     
     def home (request):
-        return render(request,"webpage.html")
+        return render(request,"webpage_new.html")
     
     def aboutMe (request):
         return render (request,"aboutMe.html")

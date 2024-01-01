@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://t3.ftcdn.net/jpg/05/81/53/22/360_F_581532287_qrcnpvDyiYDJwiY1BDqkUuhKcEWVYC7p.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value (0.3) for transparency */
+}
+
+
+.navbar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background color */
+  overflow: auto;
+  border: 1px solid black;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a.chakra {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #04AA6D;
+  color: yellow;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.background-image {
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background color */
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.background-image h2,
+.background-image p {
+  color: white; /*lor for better visibility */
+  padding:0;
+  margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar.background-image {
+    background-image: url('https://img.freepik.com/premium-vector/circle-black-overlap-background_51543-774.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    /*
+    background-color: rgba(0, 0, 255, 0.5); /* Transparent background */
+    background-color: aqua;
+  }
+  a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+<body>
+
+<div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a href="#" class="chakra"><i class="fa fa-fw fa-user"></i> Login</a>
+</div>
+<div class="background-image">
+<h2> Chakra welcomes you to this website</h2>
+<p> Hover on to know more details</p>
+</div>
+
+</body>
+</html>

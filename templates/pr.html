@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,5 +20,59 @@
             </li>
         {% endfor %}
     </ul>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open Pull Requests</title>
+    <style>
+        /* Optional CSS for table styling */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Open Pull Requests</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Repository</th>
+                <th>Title</th>
+                <th>State</th>
+                <th>Created At</th>
+                <th>Updated At</th>
+                <th>Closed At</th>
+                <th>Merged</th>
+                <th>Pull Request Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for pull_request in pull_requests %}
+                <tr>
+                    <td>{{ pull_request.repository_name }}</td>
+                    <td>{{ pull_request.title }}</td>
+                    <td>{{ pull_request.state }}</td>
+                    <td>{{ pull_request.created_at }}</td>
+                    <td>{{ pull_request.updated_at }}</td>
+                    <td>{{ pull_request.closed_at }}</td>
+                    <td>{{ pull_request.merged }}</td>
+                    <td><a href="{{ pull_request.html_url }}">View PR</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </body>
 </html>

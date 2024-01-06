@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 #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
 # views.py
-
+#adding this message 
 import requests
 from django.shortcuts import render
 from django.http import HttpResponse

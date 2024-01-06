@@ -56,3 +56,4 @@ class MyPlc:
 
     def web (request):
         return render(request,"web.html")
+    

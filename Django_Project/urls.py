@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from My_App import views
+from pull_request import views as vie
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,4 +30,5 @@ urlpatterns = [
     path('certifiaction/',views.MyPlc.certification,name='certification'),
     path('learning/',views.MyPlc.learning,name='learning'),
     path('web/',views.MyPlc.web,name='web'),
+    path('pr/',vie.pr,name='pr'),
 ]

@@ -100,3 +100,24 @@ body {
   font-family: Arial, sans-serif; /* Set font family */
   font-size: 24px; /* Set font size */
 }
+
+
+/* Media query for smaller screens */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 800px; /* Adjust maximum width for smaller screens */
+  }
+  .card {
+    flex: 0 0 calc(50% - 20px); /* Two cards in a row for smaller screens */
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 600px) {
+  .container {
+    max-width: 400px; /* Adjust maximum width for even smaller screens */
+  }
+  .card {
+    flex: 0 0 calc(100% - 20px); /* Single card taking full width for very small screens */
+  }
+}

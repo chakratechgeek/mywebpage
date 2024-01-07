@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chakra Certification</title>
+  <meta charset="UTF-8">
+  {% load static %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/certification.css' %}">
+
+  <title>Chakra Certification</title>
 </head>
+
 <body>
-    <H1>My Certifications</H1>
+  <h1 class="certification-heading">Completion of AWS Solution Architect - Associate, TOGAF 9, Terraform, Kubernetes Admin, and Azure Foundation certifications demonstrates expertise in cloud architecture, enterprise frameworks, infrastructure automation, container orchestration, and fundamental Azure cloud services. This comprehensive skill set encompasses designing scalable cloud solutions, aligning IT strategies with business objectives, implementing Infrastructure as Code practices for automation, managing containerized environments efficiently, and validating foundational Azure cloud knowledge. These certifications collectively showcase proficiency in modern IT paradigms, enabling professionals to architect, deploy, and manage cutting-edge solutions, driving organizational success in today's technology-driven landscape.<br><br> -- Chakra</h1>
+   
+  <div class="container">
+    <div class="card">
+      <a href="https://www.credly.com/badges/8c46aae0-85b5-4ed5-a0af-c75c7d99ead9" target="_blank">
+      <img src="{% static 'image/aws.png' %}" alt="AWS Cert">
+      </a>
+      <div class="intro">
+        <h1>Architect</h1>
+        <p>This is my AWS Solution Architect - Associate certification. Click on this image to see authenticity </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="https://www.credly.com/badges/566848d3-ce2e-42cb-8c47-65ad4a3c9b3f" target="_blank">
+        <img src="{% static 'image/kube.png' %}" alt="CKS Cert">
+      </a>
+      <div class="intro">
+        <h1>Micro Services</h1>
+        <p>This is m y Kubernetes Administrator certificate. Click on this image to see authenticity </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="https://www.credly.com/badges/d7adecbd-46d0-4606-8781-b4d6a5ad6e3e" target="_blank">
+      <img src="{% static 'image/togaf.png' %}" alt="AWS Cert">
+      </a>
+      <div class="intro">
+        <h1>Enterprise Architect</h1>
+        <p>Enterprise architect certification from TOGAF 9. Click on this image to see authenticity  </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{% static 'image/itil.png' %}" alt="AWS Cert">
+      <div class="intro">
+        <h1>ITIL V3</h1>
+        <p>ITIL V3 foundation certification </p>
+      </div>
+    </div>
+    
+
+    <div class="card">
+      <a href="https://www.credly.com/badges/3a125121-8e2c-4f5f-aaad-b4a349cc5927" target="_blank">
+      <img src="{% static 'image/Azure.png' %}" alt="AWS Cert">
+      </a>
+      <div class="intro">
+        <h1>Azure Foundation</h1>
+        <p>This is my Azure Foundation certification. Click on this image to see authenticity </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="https://www.credly.com/badges/466339a3-9a7d-43c5-9026-54e8ac11d183" target="_blank">
+      <img src="{% static 'image/terraform_cert.png' %}" alt="AWS Cert">
+      </a>
+      <div class="intro">
+        <h1>DevOps - Deployment</h1>
+        <p>This is my Terraform certification.  Click on this image to see authenticity</p>
+      </div>
+    </div>
+  </div>
+  
 </body>
+
 </html>

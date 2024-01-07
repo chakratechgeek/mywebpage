@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust alignment as needed */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  flex: 0 0 calc(33.33% - 20px); /* Three cards in a row with gap */
+  height: 400px;
+  margin-bottom: 20px; /* Added margin bottom for spacing */
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+  position: relative;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+  transition: transform 0.5s, filter 0.5s;
+}
+
+.intro {
+  height: 100%;
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  background: rgba(27, 27, 27, 0.5);
+  color: white;
+  bottom: 0;
+  transition: height 0.5s, background 0.5s;
+  overflow: hidden;
+  text-align: center;
+}
+
+h1 {
+  margin: 10px;
+  font-size: 24px;
+  color:greenyellow;
+  background-color: black;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.card:hover .intro {
+  height: 30%;
+  background: rgba(27, 27, 27, 0.8);
+}
+
+.card:hover p {
+  opacity: 1;
+}
+
+.card:hover img {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Updated width to 100% */
+  background: whitesmoke;
+ /*
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuytydIe7cIEFgrp0QMx5ZIvdO4tzK_zTl9g&usqp=CAU');
+ */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.certification-heading {
+  padding: 10px; /* Add padding */
+  background-color: #f0f0f0; /* Set background color */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 20px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  max-width: 400px; /* Set maximum width */
+  margin: 5px auto 10px; /* Adjust top margin to move it down */
+  color: #333; /* Set text color */
+  font-family: Arial, sans-serif; /* Set font family */
+  font-size: 24px; /* Set font size */
+}

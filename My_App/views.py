@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Datas
 from .models import Fun
+from .models import Contact
 from django.contrib import messages
 # Create your views here.
 
@@ -30,6 +31,13 @@ class MyPlc:
         return render (request,"signup.html")
     
     def contact(request):
+        if request.method == 'POST':
+            obj_Contact = Contact() 
+            obj_Contact.Name = request.POST['Name'] #capital N in Name represents the column name
+            obj_Contact.Email = request.POST['Email']
+            obj_Contact.Message = request.POST['Message']
+            obj_Contact.save()
+      
         return render(request,"contact.html")
     
     def fun (request):

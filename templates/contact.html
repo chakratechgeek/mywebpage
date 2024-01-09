@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Contact Me</title>
     <link rel="stylesheet" href="{% static 'css/contactme.css' %}">
+    <script type="text/javascript" src="{% static 'JS/contactme.js' %}"> </script>
+    
 </head>
 
 <body>
@@ -51,27 +53,31 @@
             </div>
 
             <div class="contactform">
-                <form action="">
+                
+                <form id="form_id"  method="POST">
+                    {% csrf_token %}
                     <h2>Send Message</h2>
                     <div class="inputbox">
-                        <input type="text" name="" required="required">
+                        <input id="name" type="text" name="Name" required="required">
                         <span>Full Name</span>
                     </div>
 
                     <div class="inputbox">
-                        <input type="text" name="" required="required">
+                        <input id="email" type="text" name="Email" required="required">
                         <span>Email</span>
                     </div>
 
                     <div class="inputbox">
-                        <textarea required="required"></textarea>
+                        <textarea id="message" required="required" name="Message"></textarea>
                         <span>Type your message...</span>
                     </div>
 
                     <div class="inputbox">
                         <input type="submit" name="" value="Send">
                     </div>
+                    <div id="error-message" class="error-message"></div>
 
+                   
                 </form>
             </div>
 

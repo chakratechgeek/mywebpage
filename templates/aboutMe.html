@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    {% load static %}
-  
+  {% load static %}
+
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
+  
   <link rel="stylesheet" href="{% static 'css/aboutme.css' %}">
   <link rel="stylesheet" href="{% static 'css/aboutme_smediaqueries.css' %}">
-    <script type="text/javascript" src="{% static 'JS/aboutme_script.js' %}"> </script>
-    
+  <script type="text/javascript" src="{% static 'JS/aboutme_script.js' %}"> </script>
 </head>
 
 <body>
@@ -42,28 +42,33 @@
       </div>
     </div>
   </nav>
+
   <section id="profile">
     <div class="section__pic-container">
       <img src="{% static 'image/chaks-profile.png' %}" alt="Chakra profile picture" />
     </div>
+
     <div class="section__text">
       <p class="section__text__p1">Hello, I'm</p>
       <h1 class="title">Chakra</h1>
-      <p class="section__text__p2">Architect - Technology @ Virtusa | ITIL | Kubernetes | AWS | CodeFresh, Github Actions , GIT, Terraform, Ansible | Django, Python, SQL, Bash | Oracle, PostgreSQL, MySQL | TOGAF</p>
+      <p class="section__text__p2">Architect - Technology @ Virtusa | ITIL | Kubernetes | AWS | CodeFresh, Github
+        Actions , GIT, Terraform, Ansible | Django, Python, SQL, Bash | Oracle, PostgreSQL, MySQL | TOGAF</p>
       <div class="btn-container">
+
 	      <button class="btn btn-color-2" onclick="window.open('{% static "image/Chakravarthi_resume.pdf" %}')">
           Download CV
         </button>
-        
+
       </div>
       <div id="socials-container">
         <img src="{% static 'image/linkedin.png' %}" alt="My LinkedIn profile" class="icon"
           onclick="location.href='https://www.linkedin.com/in/chakravarthi-t-2a09b5197/'" />
-        <img src="{% static 'image/github.png' %}"  alt="My Github profile" class="icon"
+        <img src="{% static 'image/github.png' %}" alt="My Github profile" class="icon"
           onclick="location.href='https://github.com/chakratechgeek'" />
       </div>
     </div>
   </section>
+  
   <section id="about">
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
@@ -86,18 +91,24 @@
         </div>
         <div class="text-container">
           <p>
-            I am an Architect - Technology at Virtusa, a global IT services company that provides digital transformation and innovation solutions. 
-            I have more than 15 years of experience in designing and implementing cloud and data solutions for diverse clients across various industries.
-            My core competencies include AWS, Azure, Kubernetes, DevOps, DBaaS, Python, and SQL. 
-            I have achieved multiple certifications in these domains, demonstrating my expertise and commitment to continuous learning. 
-            I am passionate about delivering scalable, secure, and efficient solutions that meet customer needs and exceed expectations. 
+            I am an Architect - Technology at Virtusa, a global IT services company that provides digital transformation
+            and innovation solutions.
+            I have more than 15 years of experience in designing and implementing cloud and data solutions for diverse
+            clients across various industries.
+            My core competencies include AWS, Azure, Kubernetes, DevOps, DBaaS, Python, and SQL.
+            I have achieved multiple certifications in these domains, demonstrating my expertise and commitment to
+            continuous learning.
+            I am passionate about delivering scalable, secure, and efficient solutions that meet customer needs and
+            exceed expectations.
             I enjoy collaborating with teams, solving complex problems, and creating value through technology.
           </p>
         </div>
       </div>
     </div>
-    <img src="{% static 'image/arrow.png' %}" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    <img src="{% static 'image/arrow.png' %}" alt="Arrow icon" class="icon arrow"
+      onclick="location.href='./#experience'" />
   </section>
+  
   <section id="experience">
     <p class="section__text__p1">Explore My</p>
     <h1 class="title">Experience</h1>
@@ -197,7 +208,7 @@
                 <p>Intermediate</p>
               </div>
             </article>
-            
+
           </div>
         </div>
 
@@ -253,7 +264,8 @@
         </div>
       </div>
     </div>
-    <img src="{% static 'image/arrow.png' %}" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    <img src="{% static 'image/arrow.png' %}" alt="Arrow icon" class="icon arrow"
+      onclick="location.href='./#projects'" />
   </section>
   <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
@@ -266,39 +278,43 @@
           </div>
           <h2 class="experience-sub-title project-title">Oracle AWR Table to Visualization</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/chakratechgeek/oracleHTMLVisualization'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/chakratechgeek/oracleHTMLVisualization'">
               Github
             </button>
-            
+
           </div>
         </div>
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="{% static 'image/project-2.png' %}" alt="Project 2" class="project-img" />
+            <img src="{% static 'image/project-11.png' %}" alt="Project 2" class="project-img" />
           </div>
           <h2 class="experience-sub-title project-title">Deploy Django App on AWS EC2</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/chakratechgeek/mywebpage'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/chakratechgeek/mywebpage'">
               Github
             </button>
-            
+
           </div>
         </div>
         <div class="details-container color-container">
           <div class="article-container">
             <img src="{% static 'image/project-3.png' %}" alt="Project 3" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Configure DevOps using Ansible and Github Actions</h2>
+          <h2 class="experience-sub-title project-title">DevOps, Ansible, Github Actions</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/chakratechgeek/ec2configAnsible'">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/chakratechgeek/ec2configAnsible'">
               Github
             </button>
-           
+
           </div>
         </div>
       </div>
     </div>
-    <img src="{% static 'image/arrow.png' %}" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    <img src="{% static 'image/arrow.png' %}" alt="Arrow icon" class="icon arrow"
+      onclick="location.href='./#contact'" />
   </section>
   <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
@@ -328,12 +344,7 @@
     <p>Copyright &#169; 2024 Chakravarthi Thangavelu. All Rights Reserved.</p>
   </footer>
   <script src="script.js"></script>
+  
 </body>
 
 </html>
-
-
-
-
-
-

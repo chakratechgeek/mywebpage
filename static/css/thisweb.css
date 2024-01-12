@@ -184,9 +184,8 @@ section {
 /* PROFILE SECTION */
 
 #about-developer {
-    /*
     border: 2px solid red;
-    */
+    
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -320,15 +319,25 @@ section {
 /* ABOUT SECTION */
 
 #architecture {
-    /*
     border: 2px solid black;
-    */
+    
   position: relative;
+  
+  justify-content: center;
+
+
   
 }
 .section-container {
     gap: 4rem;
-    height: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    
+
+    
   }
 
   .section__pic-container {
@@ -342,13 +351,20 @@ section {
 
 .about-containers {
   
-  width: 80vh;
+  width: 100%;
   height: 55vh;
   /*
   border: 4px solid green; 
   */
   gap: 2rem;
+  align-items: center;
+  flex: 1;
+  padding: 0 10rem;
+
  
+  .atab {
+    width: 100%;
+}
 
 }
 /* TABLE STYLE */
@@ -401,8 +417,11 @@ td:nth-child(2) {
  /*
     border: 2px solid violet;
     */
+ /*
  width: 100%;
+ */
  height: 50vh;
+ margin-right: 2rem;
 
 }
 .details-container2 {

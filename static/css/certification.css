@@ -103,19 +103,5 @@ p {
     height: 25vh;
 }
 
-/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 100%; /* Make container full width on smaller screens */
-    }
 
-    .part1,
-    .part2,
-    .part3,
-    .part4,
-    .part5,
-    .part6 {
-        width: 100%; /* Make parts full width on smaller screens */
-    }
-}
 

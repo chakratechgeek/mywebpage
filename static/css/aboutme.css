@@ -225,17 +225,28 @@ section {
 
 .icon {
   height: 2rem;
-  cursor: pointer;
-  border: 3px solid red;
-  border-radius: 3rem;
-  transition: all 300ms ease;
+ 
 
 }
 
-.icon:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+#profile .icon {
+ 
+  border: 3px solid red;
+  border-radius: 3rem;
+ 
+  
+}
+
+
+#profile .icon:hover {
+  cursor: pointer;
   height: 2.8rem;
   
+  
+  transition: all 300ms ease;
+  
+
+
 }
 
 /* BUTTONS */

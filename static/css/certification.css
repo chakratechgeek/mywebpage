@@ -42,7 +42,7 @@ body {
 .part5,
 .part6 {
     position: relative;
-    width: 100%; /* Adjusted width for mobile view */
+    width: 32%; /* Adjusted width for mobile view */
     height: 30vh;
     box-sizing: border-box;
     border: 1px solid blue;

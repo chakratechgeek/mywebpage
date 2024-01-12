@@ -179,12 +179,14 @@ section {
 }
 .section-container {
   display: flex;
+  flex-direction: row;
+
 }
 
 /* PROFILE SECTION */
 
 #about-developer {
-    border: 2px solid red;
+
     
   display: flex;
   justify-content: center;
@@ -193,10 +195,12 @@ section {
 }
 
 .section__pic-container {
+    position: relative;
+ 
   display: flex;
   height: 400px;
   width: 400px;
-  margin: auto 0;
+  
   transition: transform 0.3s ease-in-out;
   
 }
@@ -250,15 +254,18 @@ section {
   
 }
 
+#about-developer .section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+  }
 
 #about-developer .icon:hover {
   cursor: pointer;
   height: 2.8rem;
   
-  
   transition: all 300ms ease;
-
-
 
 }
 
@@ -316,62 +323,47 @@ section {
   gap: 1rem;
 }
 
-/* ABOUT SECTION */
+/* ABOUT SECTION ARCHITECTURE*/
 
 #architecture {
-    border: 2px solid black;
+  
     
-  position: relative;
-  
-  justify-content: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 100vh;
+  }
 
-
-  
-}
 .section-container {
-    gap: 4rem;
-    height: 80%;
+
+    height: 55vh;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    
-
-    
-  }
-
-  .section__pic-container {
-   /*
-    border: 2px solid black;
-    */
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-  }
-
-.about-containers {
+    justify-content: center;
+    gap: 15rem;
   
-  width: 100%;
-  height: 55vh;
-  /*
-  border: 4px solid green; 
-  */
-  gap: 2rem;
-  align-items: center;
-  flex: 1;
-  padding: 0 10rem;
-
- 
-  .atab {
-    width: 100%;
 }
 
+#architecture .section-container .section__pic-container {
+    
+    border: 3px forestgreen;
+    height: 400px;
+    
 }
+
+#architecture .section-container .details-container1 {
+    width: 400px;
+    border: 3px rgb(61, 63, 61);
+}
+
+.details-container2 {
+   
+}
+
 /* TABLE STYLE */
 table {
     border-collapse: collapse;
     border: 1px solid black;
     height: 55vh;
+    width: 450px;
 
 }
 
@@ -399,10 +391,7 @@ td:nth-child(2) {
     /* You can adjust the value to increase or decrease the width */
 }
 
-.about-pic {
-  border-radius: 2rem;
-  width: 400px;
-}
+/* END OF TABLE STYLE */
 
 .arrow {
   position: absolute;

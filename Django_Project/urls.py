@@ -22,13 +22,9 @@ from pull_request import views as vie
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.MyPlc.home,name='Home'),
-    path('register/', views.MyPlc.register),
     path('aboutMe/',views.MyPlc.aboutMe,name='aboutMe'),
-    path('signup/',views.MyPlc.signup,name='signup'),
     path('contact/',views.MyPlc.contact,name='contact'),
-    path('fun/',views.MyPlc.fun,name='fun'),
     path('certifiaction/',views.MyPlc.certification,name='certification'),
-    path('learning/',views.MyPlc.learning,name='learning'),
-    path('web/',views.MyPlc.web,name='web'),
+    path('thisweb/',views.MyPlc.thisweb,name='thisweb'),
     path('pr/',vie.pr,name='pr'),
 ]

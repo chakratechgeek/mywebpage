@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Web Site</title>
+
+    <link rel="stylesheet" href="{% static 'css/thisweb.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/thiweb_smediaqueries.css' %}">
+    <script type="text/javascript" src="{% static 'JS/thisweb_script.js' %}"> </script>
+    
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Chakra web site Architecture</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about-developer">About-Developer</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#cicd">CICD</a></li>
+                <li><a href="#github">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Chakra web site Architecture</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about-developer" onclick="toggleMenu()">About-Developer</a></li>
+                <li><a href="#architecture" onclick="toggleMenu()">Architecture</a></li>
+                <li><a href="#cicd" onclick="toggleMenu()">CICD</a></li>
+                <li><a href="#github" onclick="toggleMenu()">GitHub</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about-developer">
+        <div class="section__pic-container">
+            <img src="{% static 'image/chaks-profile.png' %}" alt="Chakra profile picture" />
+        </div>
+
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Chakra</h1>
+            <p class="section__text__p2">Architect - Technology @ Virtusa | ITIL | Kubernetes | AWS | CodeFresh, Github
+                Actions , GIT, Terraform, Ansible | Django, Python, SQL, Bash | Oracle, PostgreSQL, MySQL | TOGAF</p>
+            <div class="btn-container">
+
+                <button class="btn btn-color-2" onclick="window.open('{% static " image/Chakravarthi_resume.pdf" %}')">
+                    Download CV
+                </button>
+
+            </div>
+            <div id="socials-container">
+                <img src="{% static 'image/linkedin.png' %}" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/chakravarthi-t-2a09b5197/'" />
+                <img src="{% static 'image/github.png' %}" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/chakratechgeek'" />
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="architecture">
+
+        <p class="section__text__p1">Get To Know More about</p>
+        <h1 class="title">Architecture</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="{% static 'image/aws_flow.png' %}" alt="Profile picture" class="about-pic" />
+            </div>
+
+            <div class="about-containers">
+                <div class="details-container1">
+                    <table class="atab">
+                        <thead>
+                            <tr>
+                                <th>Resources</th> <!-- Empty header for the first column -->
+                                <th>Comments</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Hosted-On</td> <!-- Empty cell for the first column -->
+                                <td>EC2 Spot</td>
+                            </tr>
+                            <tr>
+                                <td>Server Capacity</td>
+                                <td>1 vcpu & 1 GB RAM</td>
+                            </tr>
+                            <tr>
+                                <td>Cloud</td>
+                                <td>AWS</td>
+                            </tr>
+                            <tr>
+                                <td>Frontend</td>
+                                <td>HTML, CSS & Java Script</td>
+                            </tr>
+                            <tr>
+                                <td>Framework</td>
+                                <td>Django </td>
+                            </tr>
+                            <tr>
+                                <td>Backend</td>
+                                <td>Python</td>
+                            </tr>
+                            <tr>
+                                <td>Architect Comments</td>
+                                <td><b>Cost Optimize:</b> Spot Instance <br> <b>Security:</b> SSL Cert and Port 443 only
+                                    <br><b>Deploy :</b> Terraform, Github Actions, Ansible & Docker <br> <b>Perf: </b>
+                                    Optimal <br><b>High Availability : </b>AWS LB </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+        <div class="details-container2">
+            <p>The web application utilizes AWS EC2 Spot instances for cost-effective hosting, featuring a server with 1 vCPU and 1 GB RAM. Architect recommendations include security measures, deployment through Terraform and Docker, and high availability with an AWS Load Balancer.</p>
+        </div>
+        <img src="{% static 'image/arrow.png' %}" alt="Arrow icon" class="icon arrow"
+            onclick="location.href='./#about'" />
+    </section>
+
+
+    <section id="about">
+
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="{% static 'image/about-pic2.png' %}" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="{% static 'image/experience.png' %}" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>15+ years <br /> DevOps | DBaaS | Cloud Architect | Django Framework </p>
+                    </div>
+                    <div class="details-container">
+                        <img src="{% static 'image/education.png' %}" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>Bachelor of Engineering <br> VTU University <br> (Electronics & Communication, 2003 - 2008)
+                        </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am an Architect - Technology at Virtusa, a global IT services company that provides digital
+                        transformation
+                        and innovation solutions.
+                        I have more than 15 years of experience in designing and implementing cloud and data solutions
+                        for diverse
+                        clients across various industries.
+                        My core competencies include AWS, Azure, Kubernetes, DevOps, DBaaS, Python, and SQL.
+                        I have achieved multiple certifications in these domains, demonstrating my expertise and
+                        commitment to
+                        continuous learning.
+                        I am passionate about delivering scalable, secure, and efficient solutions that meet customer
+                        needs and
+                        exceed expectations.
+                        I enjoy collaborating with teams, solving complex problems, and creating value through
+                        technology.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about-developer">About -Developer</a></li>
+                    <li><a href="#architecture">Architecture</a></li>
+                    <li><a href="#cicd">CICD</a></li>
+                    <li><a href="#github">GitHub</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Chakravarthi Thangavelu. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

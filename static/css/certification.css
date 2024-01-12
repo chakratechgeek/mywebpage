@@ -1,123 +1,123 @@
-* {
-  margin: 0;
-  margin-top: 35px;
-  padding: 0;
-  font-family: sans-serif;
-  box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Adjust alignment as needed */
-  gap: 20px;
-  max-width: 1000px;
-  /*
-  margin: 0 auto;
-  */
-  padding: 20px;
-}
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-.card {
-  flex: 0 0 calc(33.33% - 20px); /* Three cards in a row with gap */
-  height: 400px;
-  margin-bottom: 20px; /* Added margin bottom for spacing */
-  box-shadow: 5px 5px 20px black;
-  overflow: hidden;
-  position: relative;
-}
+        html {
+            scroll-behavior: smooth;
+        }
 
-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 3px;
-  transition: transform 0.5s, filter 0.5s;
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
 
-.intro {
-  height: 100%;
-  width: 100%;
-  padding: 6px;
-  box-sizing: border-box;
-  position: absolute;
-  background: rgba(27, 27, 27, 0.5);
-  color: white;
-  bottom: 0;
-  transition: height 0.5s, background 0.5s;
-  overflow: hidden;
-  text-align: center;
-}
-
-h1 {
-  margin: 10px;
-  font-size: 24px;
-  color:greenyellow;
-  background-color: black;
-}
-
-p {
-  font-size: 16px;
-  margin: 10px;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.card:hover .intro {
-  height: 30%;
-  background: rgba(27, 27, 27, 0.8);
-}
-
-.card:hover p {
-  opacity: 1;
-}
-
-.card:hover img {
-  transform: scale(1.1) rotate(-3deg);
-}
-
-body {
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  width: 100%; /* Updated width to 100% */
-  background: whitesmoke;
- /*
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuytydIe7cIEFgrp0QMx5ZIvdO4tzK_zTl9g&usqp=CAU');
- */
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.certification-heading {
-  padding: 10px; /* Add padding */
-  background-color: #f0f0f0; /* Set background color */
-  border-radius: 8px; /* Add rounded corners */
-  box-shadow: 20px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  max-width: 400px; /* Set maximum width */
-  margin: 5px auto 10px; /* Adjust top margin to move it down */
-  color: #333; /* Set text color */
-  font-family: Arial, sans-serif; /* Set font family */
-  font-size: 24px; /* Set font size */
-}
+        #flex {
 
 
-/* Media query for smaller screens */
-@media (max-width: 1200px) {
-  .container {
-    max-width: 800px; /* Adjust maximum width for smaller screens */
-  }
-  .card {
-    flex: 0 0 calc(50% - 20px); /* Two cards in a row for smaller screens */
-  }
-}
+            height: 80vh;
+            width: 80vw;
+            /* Adjusted width for responsiveness */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 3rem auto;
+            /* Centered using auto for left and right margins */
+            padding: 1rem;
+            /* Added padding for better spacing */
+            box-sizing: border-box;
+            /* Box sizing includes padding and border in the width/height */
+        }
 
-/* Media query for even smaller screens */
-@media (max-width: 600px) {
-  .container {
-    max-width: 400px; /* Adjust maximum width for even smaller screens */
-  }
-  .card {
-    flex: 0 0 calc(100% - 20px); /* Single card taking full width for very small screens */
-  }
-}
+
+
+        .container {
+            height: 60vh;
+            width: 75vw;
+
+            display: flex;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            padding: 1rem;
+            /* background-color: rgba(0, 0, 0, 0.5); */
+            /* Semi-transparent black background */
+            gap: 0.5rem;
+        }
+
+
+        .part1,
+        .part2,
+        .part3,
+        .part4,
+        .part5,
+        .part6 {
+            position: relative;
+            width: 32%;
+            height: 30vh;
+            box-sizing: border-box;
+            border: 1px solid blue;
+            margin: 5px;
+            padding: 0.5rem;
+            background-color: black;
+            border-radius: 3rem;
+
+        }
+
+        .part1:hover,
+        .part2:hover,
+        .part3:hover,
+        .part4:hover,
+        .part5:hover,
+        .part6:hover {
+            background-color: aqua;
+            transition: all 300ms ease;
+            transform: rotate(1deg);
+            /* Adjust the degree of rotation as per your preference */
+        }
+
+
+        .head {
+
+            width: 100%;
+            text-align: center;
+            padding: 0.8rem;
+            font-weight: 500;
+            font-size: 2rem;
+
+        }
+
+        p {
+            font-size: 1.6rem;
+            margin-bottom: 0.8rem;
+            color: grey;
+        }
+
+        .part1 h1,
+        .part2 h1,
+        .part3 h1,
+        .part4 h1,
+        .part5 h1,
+        .part6 h1 {
+            text-align: center;
+            color: yellow;
+        }
+
+        .images {
+            position: relative;
+            height: 20vh;
+            width: 43vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: 0.5rem 1rem;
+            transition: all 300ms ease;
+            /* Add the transition property */
+        }
+
+        .images:hover {
+            cursor: pointer;
+            height: 25vh;
+
+        }

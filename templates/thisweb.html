@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="{% static 'css/thiweb_smediaqueries.css' %}">
     <script type="text/javascript" src="{% static 'JS/thisweb_script.js' %}"> </script>
-    
+
 </head>
 
 <body>
@@ -121,7 +121,8 @@
                                 <td>Architect Comments</td>
                                 <td><b>Cost Optimize:</b> Spot Instance <br> <b>Security:</b> SSL Cert and Port 443 only
                                     <br><b>Deploy :</b> Terraform, Github Actions, Ansible & Docker <br> <b>Perf: </b>
-                                    Optimal <br><b>High Availability : </b>AWS LB </td>
+                                    Optimal <br><b>High Availability : </b>AWS LB
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -134,13 +135,64 @@
 
         </div>
         <div class="details-container2">
-            <p>The web application utilizes AWS EC2 Spot instances for cost-effective hosting, featuring a server with 1 vCPU and 1 GB RAM. Architect recommendations include security measures, deployment through Terraform and Docker, and high availability with an AWS Load Balancer.</p>
+            <p>The web application utilizes AWS EC2 Spot instances for cost-effective hosting, featuring a server with 1
+                vCPU and 1 GB RAM. Architect recommendations include security measures, deployment through Terraform and
+                Docker, and high availability with an AWS Load Balancer.</p>
         </div>
-       
+
     </section>
 
 
+    <section id="cicd">
+
+        <h1 class="title">CICD Pipeline used for this Architecture</h1>
+        <div class="cicd_container">
+
+            <div class="cicd-img">
+                <img src="{% static 'image/github_actions.png' %}" alt="CICD Pileline" class="cicd_pci" />
+            </div>
+
+            <div class="cicd_details_container">
+                <p>The web application utilizes AWS EC2 Spot instances for cost-effective hosting, featuring a server
+                    with 1 vCPU and 1 GB RAM. Architect recommendations include security measures, deployment through
+                    Terraform and Docker, and high availability with an AWS Load Balancer.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="github">
+        <h1 class="title">GitHub references of this web site Architecture</h1>
+        <div class="git_container">
+            <div class="deploy">
+                <h2>Deployment</h2>
+                <img src="{% static 'image/terraform.jpg' %}" alt="Deployment Git Code" class="deploy_pic" />
+                <button class="btn btn-color-2" onclick="window.open('https://github.com/chakratechgeek/djangoInfra')">Click Here</button>
+            </div>
+
+            <div class="code">
+                <h2>App Code</h2>
+                <img src="{% static 'image/django.jpg' %}" alt="Application Code" class="deploy_pic" />
+                <button class="btn btn-color-2" onclick="window.open('https://github.com/chakratechgeek/mywebpage')">
+                    Click Here
+                </button>
     
+            </div>
+
+            <div class="code">
+                <h2>Ansible Config</h2>
+                <img src="{% static 'image/ansible.jpg' %}" alt="Application Code" class="deploy_pic" />
+                <button class="btn btn-color-2" onclick="window.open('https://github.com/chakratechgeek/ec2configAnsible')">
+                    Click Here
+                </button>
+                
+            </div>
+        </div>
+
+       
+
+    </section>
 
     <footer>
         <nav>

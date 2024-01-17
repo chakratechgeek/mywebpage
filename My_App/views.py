@@ -32,4 +32,7 @@ class MyPlc:
     
     def thisweb (request):
         return render(request,"thisweb.html")
+
+    def rds_onboarding (request):
+        return render(request,"rds_onboarding.html")
     

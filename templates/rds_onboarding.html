@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="{% static 'css/rds_onboarding.css' %}" />
+    <script
+      type="text/javascript"
+      src="{% static 'JS/rds_onboarding.js' %}"
+    ></script>
+  </head>
+  <body>
+    <section id="rds">
+      <div class="text">
+        <h1>DBaaS RDS Onbording Form</h1>
+      </div>
+
+      <div class="container">
+        <div class="ref">
+          <h2>DBaaS RDS References</h2>
+          <ul>
+            <li><a href="#">Onboarding Runbook</a></li>
+            <li><a href="#">CodeFresh Runbook</a></li>
+            <li><a href="#">AWS Instance choose</a></li>
+          </ul>
+        </div>
+
+        <div class="form">
+            <form id="form_id" method="POST">
+                {% csrf_token %}
+                
+                <div class="inputbox">
+                  <input id="name" type="text" name="Name" required="required" />
+                  <label for="name">RDS Engine</label>
+                  <div class="tooltip">PGSQL, Postgres, MSSQL</div>
+                </div>
+              
+                <div class="inputbox">
+                  <input id="text" type="text" name="Email" required="required" />
+                  <label for="email">Storage</label>
+                  <div class="tooltip">Refer: AWS reference page</div>
+                </div>
+              
+                <div class="inputbox">
+                  <textarea id="message" required="required" name="Message"></textarea>
+                  <label for="message">Instance Name</label>
+                  <div class="tooltip">refer: Codefresh Confluence page left side</div>
+                </div>
+              
+                <div class="inputbox">
+                  <input type="submit" name="" value="Submit" />
+                </div>
+                
+              </form>
+              
+              
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

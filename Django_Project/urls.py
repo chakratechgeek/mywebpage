@@ -27,4 +27,5 @@ urlpatterns = [
     path('certifiaction/',views.MyPlc.certification,name='certification'),
     path('thisweb/',views.MyPlc.thisweb,name='thisweb'),
     path('pr/',vie.pr,name='pr'),
+    path('rds_onboarding/',views.MyPlc.rds_onboarding,name='rds_onboarding'),
 ]

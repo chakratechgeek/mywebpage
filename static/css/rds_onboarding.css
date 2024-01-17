@@ -1,0 +1,201 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+/* SECTION CSS */
+
+
+#rds {
+    
+    /*
+    border: 2px solid red;
+    */
+    height: 80vh;
+    width: 100vh;
+    margin: 1rem 20rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    /*
+    border: 2px solid black;
+    */
+    width: 95%;
+    position: relative;
+    height: 6vh;
+    margin: 1rem;
+}
+
+.text h1 {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 1rem;
+   
+}
+
+.container {
+    position: relative;
+    /*
+    border: 2px solid yellow;
+    */
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.ref {
+    /*
+    border: 2px solid black;
+    */
+    height: 60vh;
+    width: 35%;
+}
+
+.ref ul {
+    margin: 2rem;
+}
+
+
+.form {
+    background: #fff;
+    border: 2px solid green;
+    color: black;
+    padding: 40px;
+    width: 70%;
+}
+
+.form .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form .inputbox input,
+.form .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+
+}
+
+.form .inputbox span {
+    position:absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.form .inputbox input:focus ~ span, 
+.form .inputbox input:valid ~ span,
+.form .inputbox textarea:focus ~ span, 
+.form .inputbox textarea:valid ~ span
+ {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.form .inputbox input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+
+  
+  
+
+/*======================== */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .inputbox {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  
+  .tooltip {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  .inputbox:hover .tooltip {
+    display: block;
+  }
+  
+
+  
+  .inputbox:hover::before + .tooltip {
+    display: block;
+  }
+  
+  .inputbox:hover::before {
+    color: blue; /* Change the color when hovered */
+  }
+  
+  input:focus + label, textarea:focus + label, input:not(:placeholder-shown) + label, textarea:not(:placeholder-shown) + label {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  

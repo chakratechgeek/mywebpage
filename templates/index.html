@@ -1,15 +1,270 @@
-{% include "header.html" %}
-{% include "navbar.html" %}
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Chakra Web Site</title>
-</head>
-<body>
-    {% block content %}
 
-    {% endblock %}
-    
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/contactme.css' %}">
+    <script type="text/javascript" src="{% static 'JS/contactme.js' %}"> </script>
+   
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aboutme_smediaqueries.css' %}">
+
+</head>
+
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">IT Consultation </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#services">Solutions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">IT Consultation (Chakra)</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">About Me</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Services</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Solutions</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="section_1">
+        <div class="sec_1_container">
+            <div class="sec_1_container_sub1">
+                <h1>DIGITAL TRANSFORMATION AND CAREER CONSULTATION</h1>
+
+            </div>
+            <div class="sec_1_container_sub2">
+                <ul>
+                    <div class="sec_1_container_li_1">
+                        <div>
+                            <img src="{% static 'image/li.png' %}" alt="bulllet point" class="sec_1_container_img" />
+                        </div>
+                        <div class="chakra">
+                            <li>
+                                <h2>AWS Cloud</h2>
+                            </li>
+                        </div>
+                    </div>
+
+                    <div class="sec_1_container_li_1">
+                        <div>
+                            <img src="{% static 'image/li.png' %}" alt="bulllet point" class="sec_1_container_img" />
+                        </div>
+
+                        <li>
+                            <h2>Terraform Architecture</h2>
+                        </li>
+
+
+
+                        <div class="sec_1_container_li_1">
+                            <div>
+                                <img src="{% static 'image/li.png' %}" alt="bulllet point"
+                                    class="sec_1_container_img" />
+                            </div>
+                            <div>
+                                <li>
+                                    <h2>Enterprise DBaaS</h2>
+                                </li>
+                            </div>
+                        </div>
+
+                        <div class="sec_1_container_li_1">
+                            <div>
+                                <img src="{% static 'image/li.png' %}" alt="bulllet point"
+                                    class="sec_1_container_img" />
+                            </div>
+                            <div>
+                                <li>
+                                    <h2>Automation - Python & Cloud SDK</h2>
+                                </li>
+                            </div>
+                        </div>
+
+
+                </ul>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section_2">
+        <div class="sec_2_container">
+            <div class="sec_2_container_sub1">
+                <h1>What I Offer</h1>
+            </div>
+
+            <div class="sec2_container_1">
+
+                <div class="service">
+                    <img src="{% static 'image/kube.png' %}" alt="bulllet point" />
+                    <h2>Web Design</h2>
+                    <p>This is web designing section.</p>
+                </div>
+
+                <div class="service">
+                    <img src="{% static 'image/aws.png' %}" alt="bulllet point" />
+                    <h2>DBaaS</h2>
+                    <p>This is web designing section.</p>
+                </div>
+
+                <div class="service">
+                    <img src="{% static 'image/linux2.jpg' %}" alt="bulllet point" />
+                    <h2>DevOps</h2>
+                    <p>This is web designing section.</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="section_3">
+        <div class="sec_2_container">
+            <div class="sec_2_container_sub1">
+                <h1>Career Consulting, how it works</h1>
+            </div>
+
+            <div class="sec2_container_1">
+
+                <div class="service">
+                    <h1>STEP 1</h1>
+                    <h2>Understand the candiates profile</h2>
+                    
+                    <p>This is web designing section.</p>
+                </div>
+
+                <div class="service">
+                   
+                    <h1>STEP 2</h1>
+                    <h2>Explain current IT situation for the profile</h2>
+                    <p>This is web designing section.</p>
+                </div>
+
+                <div class="service">
+                    <h1>STEP 3</h1>
+                    <h2>Help to develop with real time demo</h2>
+                    <p>This is web designing section.</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="section_4">
+        <div class="sec_2_container">
+            <div class="sec_2_container_sub1">
+                <h1>To whom its applicable</h1>
+            </div>
+
+            
+
+
+        </div>
+
+    </section>
+
+    <section class="section_5">
+        <div class="content">
+            <h2>Contact Me</h2>
+            <p>Thanks for visiting this page. I'm happy to be contacted for consultation and it would be great if you could leave the feedback for me to develop further</p>
+        </div>
+
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>H105 DLF Mainden Heights <br> jigani bangalore - 560105 <br> <br></p>
+
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+91 99722 34824 <br><br></p>
+
+                    </div>
+                </div>
+
+
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>chakratechgeek@outlook.com </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contactform">
+                
+                <form id="form_id"  method="POST">
+                    {% csrf_token %}
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <input id="name" type="text" name="Name" required="required">
+                        <span>Full Name</span>
+                    </div>
+
+                    <div class="inputbox">
+                        <input id="email" type="text" name="Email" required="required">
+                        <span>Email</span>
+                    </div>
+
+                    <div class="inputbox">
+                        <textarea id="message" required="required" name="Message"></textarea>
+                        <span>Type your message...</span>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                    <div id="error-message" class="error-message"></div>
+
+                   
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
 </body>
+
 </html>

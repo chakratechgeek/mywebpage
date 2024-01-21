@@ -36,3 +36,9 @@ class MyPlc:
     def rds_onboarding (request):
         return render(request,"rds_onboarding.html")
     
+    def services (request):
+        return render(request,"webpage_v2.html")
+    
+    def index (request):
+        return render(request,"index.html")
+    

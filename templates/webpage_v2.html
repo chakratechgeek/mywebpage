@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Services</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/webpage_v2.css' %}">
+    <script src="https://kit.fontawesome.com/ce5721ed59.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">IT Consulting</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#price">Price</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">IT Consulting</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()"> Home</a></li>
+                <li><a href="#aboutme" onclick="toggleMenu()">About Me</a></li>
+                <li><a href="#Services" onclick="toggleMenu()">Services</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#price" onclick="toggleMenu()">Price</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="super_container">
+        <div class="head">
+            <h1>About Us</h1>
+        </div>
+        <div class="top_container">
+            <div class="img">
+                <img src="{% static 'image/team5.png' %}" alt="Chakra profile picture" />
+            </div>
+
+            <div class="text">
+                <p>Welcome to [Your Company Name], a leading force in DevOps and Database as a Service (DBaaS)
+                    engineering.
+                    Our mission is clear—to empower businesses in the dynamic digital landscape through innovative
+                    technology solutions.
+                    With a team of seasoned professionals, we stand out through our commitment to expertise,
+                    collaboration, agility, and unwavering security.
+                    From streamlining software development with DevOps practices to simplifying database management
+                    through scalable DBaaS solutions,
+                    we deliver efficiency and reliability. Our core values of innovation, integrity, and excellence
+                    drive every aspect of our work,
+                    ensuring transparency, honesty, and the pursuit of high standards. Join us on a transformative
+                    journey at [Your Company Name],
+                    where we redefine possibilities and propel your business forward through the power of DevOps and
+                    DBaaS engineering.
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Our Services</h1>
+            <div class="row">
+                <div class="service">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Design</h2>
+                    <p>This is web designing section.</p>
+                </div>
+
+                <div class="service">
+                    <i class="fa-sharp fa-solid fa-database"></i>
+                    <h2>DBaaS</h2>
+                    <p>This is web designing section.</p>
+                </div>
+
+                <div class="service">
+                    <i class="fa-solid fa-infinity"></i>
+                    <h2>DevOps</h2>
+                    <p>This is web designing section.</p>
+                </div>
+
+                <div class="service">
+                    <i class="fa-solid fa-sitemap"></i>
+                    <h2>Architecture</h2>
+                    <p>This is web designing section.</p>
+                </div>
+
+                <div class="service">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <h2>Career Growth Consulting</h2>
+                    <p>This is web designing section.</p>
+                </div>
+
+                <div class="service">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Data Engineering</h2>
+                    <p>This is web designing section.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        
+    </div>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#price">Price</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Chakravarthi Thangavelu. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

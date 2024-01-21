@@ -28,4 +28,6 @@ urlpatterns = [
     path('thisweb/',views.MyPlc.thisweb,name='thisweb'),
     path('pr/',vie.pr,name='pr'),
     path('rds_onboarding/',views.MyPlc.rds_onboarding,name='rds_onboarding'),
+    path('services/',views.MyPlc.services,name='services'),
+    path('index/',views.MyPlc.index,name='index'),
 ]

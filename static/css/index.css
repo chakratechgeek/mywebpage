@@ -173,248 +173,249 @@ a:hover {
 .section_3,
 .section_4,
 .section_5 {
-    width: 95%;
-    height: 70vh;
+    width: 99%;
+    height: 80vh;
     margin: 0;
     padding: 0;
-    margin-left: 2rem;
-    margin-bottom: 3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1.5rem;
     background: linear-gradient(to right, #eaeaea, #ffffff);
     box-shadow: 0 0 10px rgba(0.1, 0, 0, 1);
-
+    position: relative
 }
 
 .section_1 {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    flex-direction: column;
+    /*
+    background-image: url('https://www.bannerflow.com/hubfs/Imported_Blog_Media/zazzle_blog-social-3-3.jpg');
+    */
+    background: url('https://www.esri.com/content/dam/esrisites/en-us/landing-pages/digital-transformation/2023-update/dt-banner.jpg');
+    background-size: cover;
+    /* Ensures the image covers the entire container */
+    background-position: center;
+    /* Centers the image within the container */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating if it doesn't cover the entire container */
+    border-radius: 20px;
+
+
+
+}
+
+.section_1-text1 {
+    position: relative;
     /*
     border: 2px solid red;
-    */
-    height: 50vh;
-    background-size: cover;
-    /* Cover the entire container */
-    background-position: center;
-    /* Center the background image */
-    background-attachment: fixed;
-    background-image: url('data:image/jpeg;base64,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');
-
-
-}
-
-.section_2 {
-    border: 2px solid black;
-    
-    background-color: whitesmoke;
-    
-    
-
-}
-
-.section_3 {
-    border: 2px solid pink;
-    background-color: aqua;
-    height: 50vh;
-
-}
-
-.section_4 {
-    border: 2px solid yellow;
-
-}
-
-.section_5 {
-    border: 2px solid green;
-    height: 78vh;
-
-}
-
-/* SECTION1 <==> CONTAINER */
-
-.sec_1_container {
-    /*
-    border: 2px solid magenta;
-    */
-    height: 70vh;
-    margin: 1rem;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 95%;
-    position: relative;
-}
-
-.sec_1_container_sub1,
-.sec_1_container_sub2 {
-    
-    /*
-    border: 2px solid green;
     */
     height: 20vh;
-    margin: 1rem;
-
-    width: 95%;
-    position: relative;
-}
-
-.sec_1_container_sub1 {
-    text-align: center;
     align-items: center;
-
-}
-
-.sec_1_container_sub2 {
-    position: relative;
-    height: 40vh;
-}
-
-.sec_1_container_sub2 ul {
-    list-style-type: none;
-    display: flex;
-    padding-left: 0;
-}
-
-.sec_1_container_sub2 li {
-    margin-right: 10px;
-    margin-top: 3rem;
-}
-
-.sec_1_container_sub2 li {
-    display: block;
-    color: black;
     text-align: center;
-    padding: 16px;
-    text-decoration: none;
 
 }
 
-.sec_1_container_sub1 h1 {
+.section_1-text1 h1 {
+    font-size: 2rem;
+    text-align: center;
     padding: 1rem;
-    /*
-    border: 2px solid blueviolet;
-    */
-    font-size: 35px;
-    color: black
+
+    color: whitesmoke
 }
 
-.sec_1_container_img {
-
-    width: 30px;
-    height: 30px;
+.section_1-text2 {
+    position: relative;
     align-items: center;
+    /*
+    border: 2px solid white;
+    */
+    height: 55vh;
+
+
+}
+
+/* SECTION 1 */
+
+.section_1_text-inner {
+    /*
+    border: 2px solid green;
+    */
+    height: 50vh;
+    width: 50%;
+    position: relative;
+    margin-left: 13rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    /* Two rows */
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns */
+    gap: 20px;
+    /* Adjust the gap between boxes as needed */
+}
+
+.box {
+    padding: 20px;
+    /* Adjust as needed */
     position: relative;
     /*
-    border: 2px solid red;
+    border: 1px solid #ccc;
     */
-
-}
-
-.sec_1_container_li_1 {
-    display: flex;
-    flex-direction: row;
-    /*
-    border: 2px solid brown;
-    */
+    border-radius: 20px;
+    color: white;
     align-items: center;
-    margin: 0;
+    text-align: center;
     justify-content: center;
+    display: flex;
 
+    background-color: rgba(0, 89, 255, 0.356);
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 500;
 }
 
-.sec_1_container_img {
-    margin-top: 35px;
-    
+.box:hover {
+    background-color: rgb(2, 2, 26);
+    transform: scale(1.1);
 }
+
+.box h1 {
+    transition: background-color 0.3s ease, transform 1s ease;
+}
+
+.box h1:hover {
+    transform: scale(1.1);
+}
+
+/* END OF SECTION 1 */
 
 /* SECTION 2 */
 
-
-.sec2_container_1 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 5fr)); 
-    grid-gap: 25px;
-    /*
-    background: linear-gradient(to right, #eaeaea, #ffffff);
-    box-shadow: 0 0 10px rgba(0.1, 0, 0, 1); 
-    border-radius: 15px;
-    */
-}
-
-.sec_2_container_sub1 {
-    text-align: center;
-    padding: 2rem;
-}
-
-.service {
-    text-align: center;
-    padding: 25px;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    background: transparent;
-    transition:  transform 0.4s, background 0.3s;
+.section_2 {
     
-
+    background-image: url('https://www.datarobot.com/wp-content/uploads/2017/11/How-Disruptive-Technology-is-Changing-the-Game-in-Financial-Crimes-Compliance-Background.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.service img {
-    width: 200px;
-    height: 200px;
-}
-
-.service i {
-    font-size: 40px;
-    margin-bottom: 10px;
-    color: #303ef7;
-
-}
-
-.service h2 {
-    font-weight: 600;
-    margin-bottom: 8px;
+.section_2-text1 {
+    position: relative;
+    /*
+    border: 2px solid black;
+    */
+    height: 10vh;
+    align-items: center;
     text-align: center;
+    justify-content: center;
+    display: flex;
+
 }
 
-.service h1 {
-    font-weight: 600;
-    margin-bottom: 8px;
+.section_2-text1 h1 {
     text-align: center;
-    font-size: 28px;
-    padding: 2rem;
-}
-.service p {
-    font-weight: 500;
-    background-color: whitesmoke;
-    color: black;
-    border-radius: 15px;
-}
-
-.service p:hover {
-    font-weight: 500;
+    position: relative;
+    padding: 1rem;
+    width: 15rem;
+    font-weight: 600;
+    /*
+    border: 2px solid red;
+    */
+    border-radius: 20px;
+    
+    margin-top: 1rem;
     color: white;
 }
 
-.service:hover{
-    color: #fff;
-    transform: scale(1.05);
-    background: #303ef7;
+.section_2-img_container {
+    /*
+    border: 2px solid green;
+    */
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+  
+    align-items: center;
+    color: white;
 }
 
-.service:hover i {
-    color: #fff;
+.section_2-img1,
+.section_2-img2 {
+  flex: 1; 
+  /*
+  border: 2px solid red;
+  */
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 61vh;
+  gap: 1rem;
+  /*
+  background-color: grey;
+  */
+  box-shadow: 0 0 10px rgb(2, 1, 1);
+  flex-direction: row;
+
 }
+
+.section_2-img1 {
+    /*
+    border: 2px solid red;   
+    */
+    
+}
+
+.section_2-img2 {
+    /*
+    border: 2px solid yellow;
+    */
+}
+
+.section_2-img1 img {
+    height: 55vh;
+    width: 70vh;    
+    border-radius: 20px;
+}
+
+.section_2-img2 img {
+    height: 55vh; 
+    width: 70vh;  
+    border-radius: 20px;
+}
+
+.images1 {
+    text-align: center;
+    
+}
+
+.ulis {
+    
+    margin-left: 1rem;
+    color: white;
+}
+
+/* SECTION 2 ENDS HERE */
 
 /* SECTION 3 */
 
-
-/* SECTION 5 */
-
-.content h2 {
-    align-items: center;
-    text-align: center;
-    margin: 1rem;
+.section_3 {
+    background-image: url('https://www.shutterstock.com/image-vector/purple-geometric-wallpaper-background-dynamic-260nw-2240860187.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
-.content p {
-    align-items: center;
-    text-align: center;
-    
+.section_3-text1 {
+    color: white;
 }
